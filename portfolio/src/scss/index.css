@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.header_container .logo {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+body {
+  background: #000;
+}
+
+span {
+  color: #FF2B51;
+}
+
+[class*=_container] {
+  max-width: 90%;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */
