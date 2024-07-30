@@ -1,3 +1,6 @@
+@use "../abstracts" as *;
+
+
 .header {
     &_container {
         display: flex;
@@ -7,6 +10,30 @@
             padding: 0;
             margin: 0;
             display: block;
+            margin: 0 -56px;
+        }
+
+        .nick_name {
+            @include font("Poppins", 400);
+            letter-spacing: 6px;
+            color: $nn;
+        }
+
+        .name_specialist {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin-left: auto;
+            color: $red;
+
+
+            .firstname {
+                @include font("Poppins", 500)
+            }
+
+            .lastname {
+                @include font("Poppins", 600)
+            }
         }
     }
 }
