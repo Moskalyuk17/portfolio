@@ -1,0 +1,34 @@
+@use "../abstracts" as *;
+
+
+.main {
+    &_container {
+
+        .circle {
+            position: absolute;
+            top: 20%;
+            left: 31%;
+            border: 0.9em solid $Carminered;
+            border-radius: 50%;
+            box-shadow:0 0 5px $Carminered,
+                    0 0 1px $Carminered, 
+                    0 0 1px $Carminered,
+                    0 0 2px $Carminered,
+                    0 0 35px $Carminered,
+                    0 0 8px $Carminered,
+                    inset 3px 3px 10px 3px $Carminered;
+            height: 30em;
+            width: 30em;
+        }
+
+        figure {
+            position: absolute;
+            top: 20%;
+            left: 28%;
+            img {
+                width: 40vw;
+                height: 80vh;
+            }
+        }
+    }
+}

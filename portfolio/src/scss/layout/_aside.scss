@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.aside {
+    float: right;
+    @include font("Poppins", 700);
+    writing-mode: vertical-rl;
+    height: 70%;
+    margin-right: .6%;
+
+    &_info {
+        display: flex;
+        justify-content: space-evenly;
+
+
+        a:hover {
+            margin-right: 2%;
+            transition: .8s ease;
+            transform: scale(1.4);
+        }
+    }
+}
