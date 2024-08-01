@@ -13,12 +13,32 @@
             box-shadow:0 0 5px $Carminered,
                     0 0 1px $Carminered, 
                     0 0 1px $Carminered,
-                    0 0 2px $Carminered,
+                    0 0 20px $Carminered,
                     0 0 35px $Carminered,
                     0 0 8px $Carminered,
-                    inset 3px 3px 10px 3px $Carminered;
+                    inset 3px 3px 35px 3px $Carminered;
             height: 30em;
             width: 30em;
+            animation: animate_fading 5s infinite;
+            animation-timing-function: linear;
+
+            @keyframes animate_fading {
+                0% {
+                    opacity: 1;
+                }
+                25% {
+                    opacity: 0.9;
+                }
+                50% {
+                    opacity: 0.8;
+                }
+                75% {
+                    opacity: 0.9;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
         }
 
         figure {

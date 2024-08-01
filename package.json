@@ -1,5 +1,10 @@
 {
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "react-animation": "^1.2.2",
+    "react-animations": "^1.0.0",
+    "react-fade-in": "^2.0.1",
+    "react-type-animation": "^3.2.0",
+    "styled-components": "^6.1.12"
   }
 }

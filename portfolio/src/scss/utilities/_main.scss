@@ -1,8 +1,21 @@
 @use "../abstracts" as *;
 
 body {
-    background: $black;
-    overflow-y: hidden;
+  background: $black;
+  overflow-y: hidden;
+
+  .App {
+    animation: fade-in 3s;
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 100;
+      }
+    } 
+  }
 }
 
 span {

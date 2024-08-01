@@ -52,11 +52,30 @@ a {
   left: 31%;
   border: 0.9em solid #E40037;
   border-radius: 50%;
-  box-shadow: 0 0 5px #E40037, 0 0 1px #E40037, 0 0 1px #E40037, 0 0 2px #E40037, 0 0 35px #E40037, 0 0 8px #E40037, inset 3px 3px 10px 3px #E40037;
+  box-shadow: 0 0 5px #E40037, 0 0 1px #E40037, 0 0 1px #E40037, 0 0 20px #E40037, 0 0 35px #E40037, 0 0 8px #E40037, inset 3px 3px 35px 3px #E40037;
   height: 30em;
   width: 30em;
+  animation: animate_fading 5s infinite;
+  animation-timing-function: linear;
 }
 
+@keyframes animate_fading {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .main_container figure {
   position: absolute;
   top: 20%;
@@ -93,6 +112,18 @@ body {
   overflow-y: hidden;
 }
 
+body .App {
+  animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
 span {
   color: #FF2B51;
 }
