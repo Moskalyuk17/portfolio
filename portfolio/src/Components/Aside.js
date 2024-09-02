@@ -1,17 +1,19 @@
 import React from 'react';
-import About from './About';
+import { NavLink } from 'react-router-dom';
 
 class Aside extends React.Component {
-    render () {
+    render() {
         return (
             <div className='aside'>
                 <div className='aside_info'>
-                    <a href='./About' className='about'>ABOUT</a>
-                    <a href='#' className='project'>PROJECT</a>
-                    <a href='#' className='contacts'>CONTACTS</a>
+                    <NavLink to='/about' className='about'>ABOUT</NavLink>
+
+                    <NavLink to='/project' className='project'>ROJECT</NavLink>
+
+                    <NavLink to='/contacts' className='contacts'> CONTACTS </NavLink>
                 </div>
             </div>
-          );
+        );
     }
 }
 

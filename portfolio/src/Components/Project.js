@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const Project = () => {
-  return (
-    <div>
-        <h1>Project</h1>
-    </div>
-  )
+class Project extends React.Component {
+  render() {
+    return (
+        <div>
+          <h1>hsdjkfhkjsdhfks</h1>
+        </div>
+    );
+  }
 }
 
 export default Project

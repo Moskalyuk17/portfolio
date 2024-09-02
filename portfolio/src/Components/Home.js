@@ -1,12 +1,10 @@
- //Home.js
- import React from 'react'
+import React from 'react';
+import Main from './Main';
 
- const Home = () => {
-   return (
-     <div>
-         <h1>Home</h1>
-     </div>
-   )
- }
+class Home extends React.Component {
+  render() {
+    return <Main />;
+  }
+}
 
- export default Home
+export default Home;
